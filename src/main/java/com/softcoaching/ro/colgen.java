@@ -38,5 +38,13 @@ class colgen {
             Map.Entry e = itrMap.next();//no need to typecast
             System.out.println(e.getKey() + " " + e.getValue());
         }
+
+
+        //3. Generic class example
+        GenericClass<Integer> m = new GenericClass<Integer>();
+        m.add(22222);
+        System.out.println("\nClass  element is: ");
+        //m.add("vivek");//Compile time error
+        System.out.println(m.get());
     }
 }
